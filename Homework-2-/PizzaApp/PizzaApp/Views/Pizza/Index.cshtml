@@ -1,0 +1,14 @@
+﻿@using PizzaApp.ViewModels;
+@model List<PizzaDetailsViewModel>
+	<h2>All Pizzas:</h2>
+@foreach (PizzaDetailsViewModel pizzas in Model)
+{
+    <li>
+        Name: @pizzas.PizzaName
+        <ul>
+            <li>Price: @pizzas.PizzaPrice</li>
+            <li>Size: @pizzas.PizzaSize</li>
+        </ul>
+    </li>
+}
+    </ul>

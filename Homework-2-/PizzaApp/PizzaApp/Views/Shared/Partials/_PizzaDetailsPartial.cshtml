@@ -1,0 +1,29 @@
+﻿@model PizzaDetailsViewModel
+
+<ul>
+
+	<li>
+		Name: @Model.PizzaName
+		<ul>
+			<li>Price:
+				@if(Model.PizzaHasExtras)
+				{
+					@(Model.PizzaPrice + 10)
+				}
+				else
+				{
+					@Model.PizzaPrice
+				}
+
+			</li>
+			<li>
+				Size: @Model.PizzaSize
+			</li>
+		</ul>
+	</li>
+</ul>
+
+@if(Model.PizzaIsOnPromotion == true)
+{
+	<h4>Pizza is on promotion!</h4>
+}

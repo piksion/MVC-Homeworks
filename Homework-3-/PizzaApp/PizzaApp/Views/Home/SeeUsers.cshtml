@@ -1,0 +1,13 @@
+﻿@model List<Users>
+
+	<h2>Users:</h2>
+
+<ul>
+	@foreach (Users user in @Model)
+	{
+		<li>Id: @user.Id</li>
+		<li>Username: @user.UserName</li>
+		<li>First name: @user.FirstName</li>
+		<li>Last Name: @user.LastName</li>
+	}
+</ul>

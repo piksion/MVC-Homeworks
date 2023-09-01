@@ -1,0 +1,14 @@
+﻿@model Pizza
+
+<h2>Pizza details:</h2>
+<p>Name: @Model.Name </p>
+<p>Price: @Model.Price </p>
+
+@{
+	string message = "This pizza is on promotion.";
+
+	if(Model.IsOnPromotion)
+	{
+		<h4>@message</h4>
+	}
+}

@@ -1,0 +1,10 @@
+﻿@model List<Pizza>
+
+	<h2>Pizzas:</h2>
+
+	<ul>
+		@foreach(Pizza p in @Model)
+	{
+		<li>Name: @p.Name</li>
+	}
+</ul>

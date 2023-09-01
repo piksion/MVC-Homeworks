@@ -1,0 +1,11 @@
+﻿@using PizzaApp.ViewModels;
+@model List<UserViewModel>
+
+	<h2>All users:</h2>
+
+	@foreach(UserViewModel user in Model)
+	{
+		<ul>
+		<li>User: @user.UserFullName</li>
+		</ul>
+	}

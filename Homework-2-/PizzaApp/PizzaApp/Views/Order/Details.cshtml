@@ -1,0 +1,13 @@
+﻿@using PizzaApp.ViewModels
+@model OrderDetailsViewModel
+
+@*<h1>Details page!!</h1>*@
+
+<h2>@ViewData["Title"]</h2>
+
+<p>User: @Model.UserFullName</p>
+<p>Pizza: @Model.PizzaName</p>
+<p>Price: @Model.OrderPrice</p>
+<p>Payment Method: @Model.PaymentMethod</p>
+
+<p>@ViewData["DateTime"]</p>
